@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvMaTheLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Mã thể loại : "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edMaTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvMaTheLoai" />
+
+    <TextView
+        android:id="@+id/tv_tenTheLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMaTheLoai"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên thể loại: "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edTenTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edMaTheLoai"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvMaTheLoai" />
+
+    <TextView
+        android:id="@+id/tv_viTri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tenTheLoai"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Vị trí: "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edViTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTenTheLoai"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvMaTheLoai" />
+
+    <TextView
+        android:id="@+id/tv_MoTa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_viTri"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="Mô tả:  "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edViTri"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvMaTheLoai" />
+
+
+    <Button
+        android:id="@+id/btnAddTL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_MoTa"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:onClick="addTL"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnCancelUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_MoTa"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnAddTL"
+        android:text="Huỷ" />
+
+    <Button
+        android:id="@+id/btnShowTL"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCancelUser"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Danh sách thể loại " />
+
+</RelativeLayout>

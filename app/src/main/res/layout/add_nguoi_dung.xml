@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvUserName_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="UserName: "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edUserName_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvUserName_add" />
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserName_add"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Mật khẩu: "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edPassword_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edUserName_add"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvUserName_add" />
+
+    <TextView
+        android:id="@+id/rePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pass"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Nhập lại: "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edRePassword_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPassword_add"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/tvUserName_add" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rePass"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="Số điện thoại "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edRePassword_add"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/tvUserName_add" />
+
+    <TextView
+        android:id="@+id/FullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="full name"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPhone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/tvUserName_add" />
+
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FullName"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:onClick="addUser"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnCancelUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FullName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnAddUser"
+        android:text="Huỷ" />
+
+    <Button
+        android:id="@+id/btnShowUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCancelUser"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Danh sách người dùng" />
+
+</RelativeLayout>

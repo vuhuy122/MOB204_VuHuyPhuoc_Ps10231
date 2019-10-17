@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout đăng nhập-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--logo-->
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lv_logo"
+    android:src="@drawable/logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    />
+
+    <EditText
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/lv_logo"
+        android:id="@+id/edUserName"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="admin"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edUserName"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/edPassword"
+        android:text="admin"
+        android:inputType="textPassword"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkRememberPass"
+        android:layout_marginLeft="20dp"
+        android:text="Lưu mật khẩu"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edPassword"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkRememberPass"
+        android:layout_marginTop="46dp"
+        android:onClick="checkLogin"
+        android:layout_marginLeft="90dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnCanel"
+        android:layout_below="@id/chkRememberPass"
+        android:layout_toRightOf="@id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Huỷ" />
+
+
+</RelativeLayout>

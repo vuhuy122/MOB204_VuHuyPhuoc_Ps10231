@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nguoidung"
+    android:icon="@drawable/emthree"
+    android:title="Người dùng"/>
+    <item
+        android:id="@+id/theloai"
+        android:icon="@drawable/cateicon"
+        android:title="Thể loại"/>
+    <item
+        android:id="@+id/sach"
+        android:icon="@drawable/bookicon"
+        android:title="Sách"/>
+    <item
+        android:id="@+id/sachbanchay"
+        android:icon="@drawable/money_icon"
+        android:title="Sách bán chạy nhất"/>
+    <item
+        android:id="@+id/hoadon"
+        android:icon="@drawable/hdicon"
+        android:title="Hoá đơn"/>
+    <item
+        android:id="@+id/thongke"
+        android:icon="@drawable/thongke"
+        android:title="Thống kê"/>
+
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+    <EditText
+        android:layout_below="@id/logo"
+        android:id="@+id/edMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sách" />
+
+    <Spinner
+        android:id="@+id/spnTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edMaSach"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp" />
+
+    <EditText
+        android:id="@+id/edTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnTheLoai"
+        android:layout_marginTop="20dp"
+        android:hint="Tên sách" />
+
+    <EditText
+        android:id="@+id/edTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTenSach"
+        android:layout_marginTop="20dp"
+        android:hint="Tác giả" />
+
+    <EditText
+        android:id="@+id/edNXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTacGia"
+        android:layout_marginTop="20dp"
+        android:hint="Nhà xuất bản" />
+
+    <Button
+        android:id="@+id/btnAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNXB"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:onClick="addUser"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnCancelBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNXB"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Huỷ"
+        android:layout_toRightOf="@id/btnAddBook" />
+
+    <Button
+        android:id="@+id/btnShowUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCancelBook"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Danh sách người dùng" />
+
+
+</RelativeLayout>
